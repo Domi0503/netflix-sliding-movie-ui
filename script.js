@@ -50,7 +50,6 @@ function onHandleClick(handle) {
     let sliderIndex = parseInt(
         getComputedStyle(slider).getPropertyValue("--slider-index")
     );
-    const progressBarItemCount = progressBar.children.length;
 
     if (handle.classList.contains("left-handle")) {
         slider.style.setProperty("--slider-index", sliderIndex - 1);
